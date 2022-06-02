@@ -6,7 +6,7 @@ public class Block {
   Rectangle c;
   Rectangle d;
   Color color;
-  private String name;
+  public String name;
   public int orient = 1;
   
   public Block(Rectangle a, Rectangle b, Rectangle c, Rectangle d, String name){

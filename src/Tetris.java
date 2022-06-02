@@ -13,10 +13,10 @@ import javafx.stage.Stage;*/
 
 public class Tetris {
     //Initial values and variables:
-    public static final int size = 25;
-    public static final int move = 25;
-    public static final int xMax = size * 12;
-    public static final int yMax = size * 24;
+    public static final int SIZE = 25;
+    public static final int MOVE = 25;
+    public static final int XMAX = SIZE * 12;
+    public static final int YMAX = SIZE * 24;
     public static final int [][] board = new int [12][24];
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
