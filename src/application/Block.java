@@ -1,3 +1,4 @@
+package application;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 public class Block {
@@ -39,7 +40,7 @@ public class Block {
         this.d.setFill(color);
   }
 
-  public void Orientation(){
+  public void orientation(){
       if (orient !=4){
           orient ++;
       }
