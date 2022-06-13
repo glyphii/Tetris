@@ -91,7 +91,7 @@ public class Tetris extends Application{
                             System.exit(0);
                         }
                         if(game) {
-                            //MoveDown(object);
+                            MoveDown(object);
                             scoretxt.setText("Score: "+ Integer.toString(score));
                             level.setText("Lines: "+ Integer.toString(linesNo));
                         }
@@ -111,14 +111,14 @@ public class Tetris extends Application{
                         Control.MoveRight(block);
                         break;
                     case DOWN:
-                        //MoveDown(block);
+                        MoveDown(block);
                         score++;
                         break;
                     case LEFT:
                         Control.MoveLeft(block);
                         break;
                     case UP:
-                        //MoveTurn(block);
+                        MoveTurn(block);
                         break;
                 }
                 

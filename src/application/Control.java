@@ -85,7 +85,7 @@ public class Control {
             case 6:
                 a.setX(XMAX/2 - SIZE - SIZE);
                 b.setX(XMAX/2 - SIZE);
-                c.setX(XMAX/2 + SIZE);
+                c.setX(XMAX/2);
                 d.setX(XMAX/2 + SIZE);
                 name = 'i';
                 break;
@@ -96,30 +96,30 @@ public class Control {
 
     public static void MoveRight (Block block){
         if (block.a.getX() + MOVE <= XMAX - SIZE && block.b.getX()+MOVE <= XMAX - SIZE && block.c.getX()+MOVE <= XMAX - SIZE && block.d.getX()+MOVE <= XMAX - SIZE){
-            int movea = board[((int)block.a.getX())+1][((int)block.a.getY()/SIZE)];
-            int moveb = board[((int)block.b.getX())+1][((int)block.b.getY()/SIZE)];
-            int movec = board[((int)block.c.getX())+1][((int)block.c.getY()/SIZE)];
-            int moved = board[((int)block.d.getX())+1][((int)block.d.getY()/SIZE)];
-            if (movea == 0 &&  moveb == 0 && movec == 0 && moved == 0){
+            //int movea = board[((int)block.a.getX())+1][((int)block.a.getY()/SIZE)];
+            //int moveb = board[((int)block.b.getX())+1][((int)block.b.getY()/SIZE)];
+            //int movec = board[((int)block.c.getX())+1][((int)block.c.getY()/SIZE)];
+            //int moved = board[((int)block.d.getX())+1][((int)block.d.getY()/SIZE)];
+            //if (movea == 0 &&  moveb == 0 && movec == 0 && moved == 0){
                 block.a.setX(block.a.getX()+MOVE);
                 block.b.setX(block.b.getX()+MOVE);
                 block.c.setX(block.c.getX()+MOVE);
                 block.d.setX(block.d.getX()+MOVE);
-            }
+            //}
         }
     }
     public static void MoveLeft (Block block){
         if (block.a.getX() - MOVE >= 0 && block.b.getX()-MOVE >= 0 && block.c.getX()-MOVE >= 0 && block.d.getX()-MOVE >= 0){
-            int movea = board[((int)block.a.getX())-1][((int)block.a.getY()/SIZE)];
-            int moveb = board[((int)block.b.getX())-1][((int)block.b.getY()/SIZE)];
-            int movec = board[((int)block.c.getX())-1][((int)block.c.getY()/SIZE)];
-            int moved = board[((int)block.d.getX())-1][((int)block.d.getY()/SIZE)];
-            if (movea == 0 &&  moveb == 0 && movec == 0 && moved == 0){
-                block.a.setX(block.a.getX()+MOVE);
-                block.b.setX(block.b.getX()+MOVE);
-                block.c.setX(block.c.getX()+MOVE);
-                block.d.setX(block.d.getX()+MOVE);
-            }
+            //int movea = board[((int)block.a.getX())-1][((int)block.a.getY()/SIZE)];
+            //int moveb = board[((int)block.b.getX())-1][((int)block.b.getY()/SIZE)];
+            //int movec = board[((int)block.c.getX())-1][((int)block.c.getY()/SIZE)];
+            //int moved = board[((int)block.d.getX())-1][((int)block.d.getY()/SIZE)];
+            //if (movea == 0 &&  moveb == 0 && movec == 0 && moved == 0){
+                block.a.setX(block.a.getX()-MOVE);
+                block.b.setX(block.b.getX()-MOVE);
+                block.c.setX(block.c.getX()-MOVE);
+                block.d.setX(block.d.getX()-MOVE);
+            //}
         }
     }
 }

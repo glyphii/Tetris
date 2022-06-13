@@ -21,11 +21,11 @@ public class Block {
         case 'j':
             color = Color.MEDIUMAQUAMARINE; break;
         case 'l':
-            color = Color.DARKGOLDENROD; break;
+            color = Color.BLUEVIOLET; break;
         case 'o':
             color = Color.INDIANRED; break;
         case 's':
-            color = Color.GHOSTWHITE; break;
+            color = Color.FUCHSIA; break;
         case 't':
             color = Color.CADETBLUE; break;
         case 'z':
