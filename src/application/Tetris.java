@@ -219,15 +219,15 @@ public class Tetris extends Application{
               block.orientation();
               break;
               } 
-            if (f==3 && cB(a, -1, 1) && cB(c, -1, -1) && cB(b, -2, -2)){
-              MoveLeft(block.a);
+            if (f==4 && cB(a, 1, 1) && cB(b, -2, 2) && cB(c, -1, 1)){
               MoveUp(block.a);
-              MoveDown(block.c);
+              MoveRight(block.a);
+              MoveLeft(block.b);
+              MoveLeft(block.b);
+              MoveUp(block.b);
+              MoveUp(block.b);
               MoveLeft(block.c);
-              MoveDown(block.b);
-              MoveDown(block.b);
-              MoveLeft(block.b);
-              MoveLeft(block.b);
+              MoveUp(block.c);
               block.orientation();
               break;
               } 
